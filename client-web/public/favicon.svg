@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <filter id="faviconGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="48" height="48" rx="10" fill="#001122" />
+
+  <circle cx="24" cy="24" r="2.5" fill="#00FFEE" filter="url(#faviconGlow)" />
+
+  <circle cx="24" cy="24" r="8" fill="none" stroke="#00FFEE" stroke-width="1.5" opacity="0.9" />
+
+  <circle cx="24" cy="24" r="14" fill="none" stroke="#00FFEE" stroke-width="1" opacity="0.6" />
+
+  <circle cx="24" cy="24" r="20" fill="none" stroke="#00FFEE" stroke-width="0.75" opacity="0.3" />
+</svg>

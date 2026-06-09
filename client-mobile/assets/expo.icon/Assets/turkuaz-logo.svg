@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <radialGradient id="radarFade" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="#00FFEE" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00FFEE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="500" height="500" rx="110" fill="#001122" />
+
+  <circle cx="250" cy="220" r="12" fill="#00FFEE" filter="url(#glow)" />
+
+  <circle cx="250" cy="220" r="50" fill="none" stroke="#00FFEE" stroke-width="4" opacity="0.8" />
+
+  <circle cx="250" cy="220" r="95" fill="none" stroke="#00FFEE" stroke-width="2.5" opacity="0.4" />
+
+  <circle cx="250" cy="220" r="140" fill="none" stroke="#00FFEE" stroke-width="1.5" opacity="0.15" />
+
+  <text x="250" y="410" font-family="'Montserrat', 'Helvetica Neue', sans-serif" fill="#FFFFFF" text-anchor="middle" font-size="36" letter-spacing="1">
+    <tspan font-weight="300">Sense</tspan><tspan font-weight="700">Guard</tspan>
+  </text>
+</svg>

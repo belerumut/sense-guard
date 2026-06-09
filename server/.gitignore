@@ -1,0 +1,17 @@
+# Bağımlılıklar
+node_modules/
+
+# Ortam değişkenleri (secret içerir)
+.env
+
+# Log dosyaları
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
