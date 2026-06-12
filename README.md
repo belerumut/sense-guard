@@ -17,6 +17,11 @@ graph TD
 
 ### 1. 📱 Mobil İstemci (`client-mobile`)
 Hastanın veya kullanıcının telefonunda çalışan mobil uygulamadır.
+
+<p align="center">
+  <img src="images/MobilTakip.jpeg" width="300" />
+</p>
+
 * **Sensör Akışı:** İvmeölçer (Accelerometer) ve Jiroskop (Gyroscope) verilerini arka planda sürekli okur.
 * **Konum Takibi:** `expo-location` ile kullanıcının GPS konumunu hem ön planda hem de arka planda izler ve sunucuya gönderir.
 * **Bağlantı Ayarı:** Farklı IP adreslerine ve sunuculara dinamik olarak bağlanabilecek yapıya sahiptir.
@@ -24,8 +29,11 @@ Hastanın veya kullanıcının telefonunda çalışan mobil uygulamadır.
 ### 2. 💻 Yönetim Web Paneli (`client-web`)
 Operatörlerin veya hekimlerin hastaları ve alarmları izlediği arayüzdür.
 * **Genel Bakış (Dashboard):** Canlı istatistikler, aktif alarmlar ve sistem durum grafikleri.
+![alt text](images/GenelBakis.jpeg)
 * **Canlı Harita (Live Map):** Harita üzerinde tüm hastaların son konumları ve aktif acil durum lokasyonları izlenebilir.
+![alt text](images/Harita.jpeg)
 * **Hasta Yönetimi:** Hastaların tıbbi detayları, acil durum yakınları yönetilebilir. Tekli/toplu kalıcı kayıt silme fonksiyonları mevcuttur.
+![alt text](images/AlarmYonetimi.jpeg)
 
 ### 3. ⚙️ Sunucu ve Analiz Merkezi (`server`)
 Tüm verilerin işlendiği, veri tabanına kaydedildiği ve alarmların üretildiği ana merkezdir.
